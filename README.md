@@ -38,6 +38,9 @@
 <summary>Read More</summary>
 
 <br>
+Beta testers
 
-* [`KICHU`](https://github.com/KichuExe)
+
+
+* [`RUSH MASTER`](https://github.com/rushmaster12)
  </details>
