@@ -41,7 +41,7 @@
 
 4. Now Deploy
     <br>
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD&branch=main&name=xbotmd&builder=dockerfile&env[SESSION_ID]=&env[WORK_TYPE]=public&env[HANDLERS]=.&env[BOT_INFO]=X-BOT-MD;ASWIN%20SPARKY;https://i.imgur.com/QH7T7u9.jpeg&env[SUDO]=917012984396&env[STICKER_DATA]=SPARKY&env[DATABASE_URL]' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repository=github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD&branch=main&name=xbotmd&builder=dockerfile&env[SESSION_ID]=&env[WORK_TYPE]=public&env[HANDLERS]=.&env[BOT_INFO]=X-BOT-MD;ASWIN%20SPARKY;https://i.imgur.com/QH7T7u9.jpeg&env[SUDO]=917012984396&env[STICKER_DATA]=SPARKY&env[DATABASE_URL]&env[KOYEB_SERVICE_NAME]=xbotmd&env[KOYEB_API_KEY]' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
 
 
 #### Thanks To
