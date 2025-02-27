@@ -199,7 +199,7 @@ Sparky({
          return await client.relayMessage(m.jid, {
                     requestPaymentMessage: {
                         currencyCodeIso4217: 'INR',
-                        amount1000: '1000',
+                        amount1000: '99000',
                         requestFrom: m.sender.jid,
                         noteMessage: {
                             extendedTextMessage: {

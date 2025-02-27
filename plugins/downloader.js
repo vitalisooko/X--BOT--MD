@@ -1,5 +1,5 @@
 const { Sparky, isPublic } = require("../lib");
-const { AP, getJson, extractUrlsFromText, getString, isUrl } = require("./pluginsCore");
+const { getJson, extractUrlsFromText, getString, isUrl } = require("./pluginsCore");
 const axios = require('axios');
 const fetch = require('node-fetch');
 const config = require("../config.js");
@@ -18,13 +18,14 @@ Sparky(
     }) => {
         args = args || m.quoted?.text;
         if (!args) return await m.reply(lang.NEED_URL);
+        //if (isUrl(args)) return await m.reply(lang.NOT_URL);
         let dl = await client.sendMessage(m.jid, {
             text: lang.DOWNLOADING
         }, {
             quoted: m
         })
         try {
-            let response = await getJson(config.API + "/v1/igdl?url=" + args);
+            let response = await getJson(config.API + "/api/downloader/igdl?url=" + args);
             for (let i of response.data) {
                 await m.sendMsg(m.jid, i.url, { quoted: m }, i.type)
             }
@@ -38,63 +39,63 @@ Sparky(
 );
 
 
-Sparky({
-    name: "apk",
-    fromMe: isPublic,
-    category: "downloader",
-    desc: "Find and download APKs from Aptoide by app ID",
-},
-async ({
-    m, client, args
-}) => {
-    let appId = args || m.quoted?.text;
-    if (!appId) return await m.reply(lang.NEED_Q);
+// Sparky({
+//     name: "apk",
+//     fromMe: isPublic,
+//     category: "downloader",
+//     desc: "Find and download APKs from Aptoide by app ID",
+// },
+// async ({
+//     m, client, args
+// }) => {
+//     let appId = args || m.quoted?.text;
+//     if (!appId) return await m.reply(lang.NEED_Q);
 
-    try {
-        await m.react('⬇️');
+//     try {
+//         await m.react('⬇️');
 
-        const { result: appInfo } = await getJson(AP + "download/aptoide?id=" + appId);
+//         const { result: appInfo } = await getJson(AP + "download/aptoide?id=" + appId);
         
-        await client.sendMessage(m.jid, {
-            document: {
-                url: appInfo.link
-            },
-            fileName: appInfo.appname,
-            caption: `App Name: ${appInfo.appname}\nDeveloper: ${appInfo.developer}`,
-            mimetype: "application/vnd.android.package-archive"
-        }, {
-            quoted: m
-        });
-        await m.react('✅');
-    } catch (error) {
-        await m.react('❌');
-        console.error(error);
-    }
-});
+//         await client.sendMessage(m.jid, {
+//             document: {
+//                 url: appInfo.link
+//             },
+//             fileName: appInfo.appname,
+//             caption: `App Name: ${appInfo.appname}\nDeveloper: ${appInfo.developer}`,
+//             mimetype: "application/vnd.android.package-archive"
+//         }, {
+//             quoted: m
+//         });
+//         await m.react('✅');
+//     } catch (error) {
+//         await m.react('❌');
+//         console.error(error);
+//     }
+// });
 
 
-Sparky({
-    name: "pintrest",
-    fromMe: isPublic,
-    category: "downloader",
-    desc: "Download images and content from Pinterest",
-},
-async ({
-    m, client, args
-}) => {
-    try {
-        let match = args || m.quoted?.text;
-        if (!match) return await m.reply(lang.NEED_URL);
-        await m.react('⬇️');
-        if (!match.includes("pin.it")) return await m.reply("_Please provide a valid Pinterest URL_");
-        const { result } = await getJson(AP + "download/pinterest?url=" + match);
-        await m.sendFromUrl(result.url, { caption: "_*downloaded 🤍*_" });
-        await m.react('✅');
-    } catch (error) {
-        await m.react('❌');
-        console.error(error);
-    }
-});
+// Sparky({
+//     name: "pintrest",
+//     fromMe: isPublic,
+//     category: "downloader",
+//     desc: "Download images and content from Pinterest",
+// },
+// async ({
+//     m, client, args
+// }) => {
+//     try {
+//         let match = args || m.quoted?.text;
+//         if (!match) return await m.reply(lang.NEED_URL);
+//         await m.react('⬇️');
+//         if (!match.includes("pin.it")) return await m.reply("_Please provide a valid Pinterest URL_");
+//         const { result } = await getJson(AP + "download/pinterest?url=" + match);
+//         await m.sendFromUrl(result.url, { caption: "_*downloaded 🤍*_" });
+//         await m.react('✅');
+//     } catch (error) {
+//         await m.react('❌');
+//         console.error(error);
+//     }
+// });
 
 
 Sparky({
@@ -109,16 +110,12 @@ async ({
     try {
         let match = args || m.quoted?.text;
         if (!match) return await m.reply(lang.NEED_Q);
-        if (isUrl(match)) {
-            let url = (await extractUrlsFromText(match));
+            await m.react('🔎');
+            const { result } = await getJson(config.API + "/api/search/xnxx?search=" + match);
             await m.react('⬇️');
-            const { result } = await getJson(AP + "download/xnxx?url=" + url);
-            await m.sendFromUrl(result.files.high, { caption: "👅💦" });
-        } else {
-            let url = await getJson(AP + "search/xnxx?q=" + match);
-            const { result } = await getJson(AP + "download/xnxx?url=" + url.result[0].link);
-            await m.sendFromUrl(result.files.high, { caption: "👅💦" });
-        }
+            var xnxx = result.result[0].link
+            const xdl = await getJson(`${config.API}/api/downloader/xnxx?url=${xnxx}`)
+            await m.sendFromUrl(xdl.data.files.high, { caption: xdl.data.title });
         await m.react('✅');
     } catch (error) {
         await m.react('❌');
@@ -140,8 +137,8 @@ async ({
         let match = args || m.quoted?.text;
         if (!match) return await m.reply(lang.NEED_URL);
         await m.react('⬇️');
-        const { data } = await getJson(AP + "download/terabox?url=" + match);
-        await m.sendFromUrl(data.result.downloadUrl, { caption: data.result.filename });
+        const { data } = await getJson(config.API + "/api/downloader/terrabox?url=" + match);
+        await m.sendFromUrl(data.dlink, { caption: data.filename });
         await m.react('✅');
     } catch (error) {
         await m.react('❌');

@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start . --attach --name X-BOT-MD",
-    "stop": "pm2 stop . --attach --name X-BOT-MD",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "stop": "pm2 stop . --attach --name X-BOT-MD"
   },
   "author": "ASWIN SPARKY",
   "license": "ISC",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD.git"
+  },
   "dependencies": {
     "@viper-x/fancytext": "^1.0.2",
     "@whiskeysockets/baileys": "git+https://github.com/WhiskeySockets/Baileys.git",
@@ -17,6 +20,7 @@
     "browser-id3-writer": "^4.4.0",
     "cheerio": "^1.0.0",
     "dotenv": "^16.4.7",
+    "express": "^4.18.2",
     "form-data": "^4.0.0",
     "file-type": "^16.5.4",
     "fluent-ffmpeg": "^2.1.3",
