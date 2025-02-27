@@ -37,7 +37,7 @@
     <br>
 <a href='https://app.koyeb.com/auth/signup' target="_blank"><img alt='koyeb' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb'/></a>
 
-2. Get [Koyeb api key](https://app.koyeb.com/account/api)
+2. Get [Koyeb api key](https://app.koyeb.com/settings/api)
 
 4. Now Deploy
     <br>
