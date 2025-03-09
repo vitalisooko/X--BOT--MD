@@ -97,6 +97,27 @@ Sparky(
 //     }
 // });
 
+Sparky({
+    name: "fb",
+    fromMe: isPublic,
+    category: "downloader",
+    desc: "Download files from Facebook by providing a valid URL",
+},
+async ({
+    m, client, args
+}) => {
+    try {
+        let match = args || m.quoted?.text;
+        if (!match) return await m.reply(lang.NEED_URL);
+        await m.react('⬇️');
+        const { data } = await getJson(config.API + "/api/downloader/fbdl?url=" + match);
+        await m.sendFromUrl(data.data.high, { caption: data.data.title });
+        await m.react('✅');
+    } catch (error) {
+        await m.react('❌');
+        m.reply(error);
+    }
+});
 
 Sparky({
     name: "xnxx",
