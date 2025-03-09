@@ -115,7 +115,7 @@ async ({
         await m.react('✅');
     } catch (error) {
         await m.react('❌');
-        m.reply(error);
+        return m.reply(error);
     }
 });
 
