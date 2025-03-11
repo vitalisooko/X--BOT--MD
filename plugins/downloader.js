@@ -74,28 +74,28 @@ Sparky(
 // });
 
 
-// Sparky({
-//     name: "pintrest",
-//     fromMe: isPublic,
-//     category: "downloader",
-//     desc: "Download images and content from Pinterest",
-// },
-// async ({
-//     m, client, args
-// }) => {
-//     try {
-//         let match = args || m.quoted?.text;
-//         if (!match) return await m.reply(lang.NEED_URL);
-//         await m.react('⬇️');
-//         if (!match.includes("pin.it")) return await m.reply("_Please provide a valid Pinterest URL_");
-//         const { result } = await getJson(AP + "download/pinterest?url=" + match);
-//         await m.sendFromUrl(result.url, { caption: "_*downloaded 🤍*_" });
-//         await m.react('✅');
-//     } catch (error) {
-//         await m.react('❌');
-//         console.error(error);
-//     }
-// });
+Sparky({
+    name: "pintrest",
+    fromMe: isPublic,
+    category: "downloader",
+    desc: "Download images and content from Pinterest",
+},
+async ({
+    m, client, args
+}) => {
+    try {
+        let match = args || m.quoted?.text;
+        if (!match) return await m.reply(lang.NEED_URL);
+        await m.react('⬇️');
+        //if (!match.includes("pin.it")) return await m.reply("_Please provide a valid Pinterest URL_");
+        const { result } = await getJson(config.API + "/api/downloader/pin?url=" + match);
+        await m.sendFromUrl(result.data.url, { caption: result.data.created_at });
+        await m.react('✅');
+    } catch (error) {
+        await m.react('❌');
+        console.error(error);
+    }
+});
 
 Sparky({
     name: "fb",
