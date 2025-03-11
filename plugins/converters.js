@@ -7,8 +7,8 @@ const lang = getString('converters');
 Sparky({
     name: "url",
     fromMe: true,
-    desc: "manage",
-    category: "manage",
+    desc: "",
+    category: "converters",
   }, async ({ args, m }) => {
     if (!m.quoted) {
       return m.reply('Reply to an Image/Video/Audio');

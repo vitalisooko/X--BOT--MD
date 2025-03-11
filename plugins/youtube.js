@@ -6,7 +6,7 @@ const {
   yta,
   ytv
 } = require("../lib");
-const {getString, isUrl} = require('./pluginsCore');
+const {getString, isUrl, convertToMp3} = require('./pluginsCore');
 const fetch = require('node-fetch');
 const lang = getString('download');
 
@@ -93,7 +93,8 @@ await m.react('⬇️');
       await m.reply(`Downloading ${play.title}`)
 const url = await yta(play.url);
 const songbuff = await (await fetch(url)).buffer();
-await client.sendMessage(m.jid , {audio : songbuff,  mimetype : 'audio/mpeg'} , { quoted : m })
+const tomp3 = await convertToMp3(songbuff)
+await client.sendMessage(m.jid , {audio : tomp3,  mimetype : 'audio/mpeg'} , { quoted : m })
  await m.react('✅');     
   } catch (error) {
       await m.react('❌');
@@ -119,7 +120,8 @@ await m.react('⬇️');
       await m.reply(`Downloading ${play.title}`)
 const url = await yta(play.url);
 const songbuff = await (await fetch(url)).buffer();
-await client.sendMessage(m.jid , {audio : songbuff,  mimetype : 'audio/mpeg'} , { quoted : m })
+const tomp3 = await convertToMp3(songbuff)
+await client.sendMessage(m.jid , {audio : tomp3,  mimetype : 'audio/mpeg'} , { quoted : m })
  await m.react('✅');     
   } catch (error) {
       await m.react('❌');
