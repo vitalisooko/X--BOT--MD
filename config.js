@@ -14,7 +14,7 @@ if (fs.existsSync("config.env")) {
 	});
 }
 
-const DATABASE_URL = process.env.DATABASE_URL || "postgresql://beta3_5testerssql_kr0z_user:PCpv4P3a30dKHc9lLLKtvTVkW9e6hauc@dpg-cujpks2j1k6c73d0o47g-a.oregon-postgres.render.com/beta3_5testerssql_kr0z"; // Corrected SQLite format
+const DATABASE_URL = process.env.DATABASE_URL || "postgresql://bella:K6HulRhBCLx64FNGmPEuPg@xbotmdv3-8961.j77.aws-ap-south-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"; // Corrected SQLite format
 
 if (!DATABASE_URL.startsWith("sqlite://") && !DATABASE_URL.startsWith("postgres://") && !DATABASE_URL.startsWith("postgresql://")) {
 	throw new Error("Invalid DATABASE_URL format. Use 'sqlite://' or 'postgres://'");
