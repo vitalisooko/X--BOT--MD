@@ -88,7 +88,7 @@ async ({
         if (!match) return await m.reply(lang.NEED_URL);
         await m.react('⬇️');
         //if (!match.includes("pin.it")) return await m.reply("_Please provide a valid Pinterest URL_");
-        const { result } = await getJson(config.API + "/api/downloader/pin?url=" + match);
+        const result = await getJson(config.API + "/api/downloader/pin?url=" + match);
         await m.sendFromUrl(result.data.url, { caption: result.data.created_at });
         await m.react('✅');
     } catch (error) {
