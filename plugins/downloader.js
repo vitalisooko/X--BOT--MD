@@ -1,4 +1,4 @@
-const { Sparky, isPublic } = require("../lib");
+const { Sparky, isPublic, spdl } = require("../lib");
 const { getJson, extractUrlsFromText, getString, isUrl } = require("./pluginsCore");
 const axios = require('axios');
 const fetch = require('node-fetch');
@@ -118,6 +118,31 @@ async ({
         return m.reply(error);
     }
 });
+
+Sparky({
+    name: "spotify",
+    fromMe: isPublic,
+    category: "downloader",
+    desc: "play a song"
+  },
+  async ({
+    m, client, args
+  }) => {
+    try {
+        args = args || m.quoted?.text;
+        if(!args) return await m.reply(lang.NEED_Q);
+  await m.react('🔎');
+  const play = (await getJson(config.API + "/api/search/spotify?search=" + args))[0]
+  await m.react('⬇️');
+        await m.reply(`_Downloading ${play.name} By ${play.artists}_`)
+  const url = await spdl(play.link);
+  await m.sendMsg(m.jid , url, { mimetype: "audio/mpeg" } , "audio")
+   await m.react('✅');     
+    } catch (error) {
+        await m.react('❌');
+        m.reply(error);
+    }
+  });
 
 Sparky({
     name: "xnxx",
