@@ -122,7 +122,7 @@ async ({
 Sparky({
     name: "spotify",
     fromMe: isPublic,
-    category: "youtube",
+    category: "downloader",
     desc: "play a song"
   },
   async ({
@@ -137,6 +137,28 @@ Sparky({
         await m.react('⬇️');
         await m.reply(`_Downloading ${play.name} By ${play.artists}_`)
   const url = await spdl(play.link);
+  await m.sendMsg(m.jid , url, { mimetype: "audio/mpeg" } , "audio")
+   await m.react('✅');     
+    } catch (error) {
+        await m.react('❌');
+        m.reply(error);
+    }
+  });
+
+  Sparky({
+    name: "spotifydl",
+    fromMe: isPublic,
+    category: "downloader",
+    desc: "play a song"
+  },
+  async ({
+    m, client, args
+  }) => {
+    try {
+        args = args || m.quoted?.text;
+        if(!args) return await m.reply(lang.NEED_URL);
+        await m.react('⬇️');
+  const url = await spdl(args);
   await m.sendMsg(m.jid , url, { mimetype: "audio/mpeg" } , "audio")
    await m.react('✅');     
     } catch (error) {
