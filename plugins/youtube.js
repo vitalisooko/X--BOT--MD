@@ -67,7 +67,8 @@ async ({
       await m.react('⬇️');
       const url = await yta(args);
       const songbuff = await (await fetch(url)).buffer();
-      await client.sendMessage(m.jid , {audio : songbuff,  mimetype : 'audio/mpeg'} , { quoted : m })
+      const tomp3 = await convertToMp3(songbuff, 'mp4')
+      await client.sendMessage(m.jid , {audio : tomp3,  mimetype : 'audio/mpeg'} , { quoted : m })
       await m.react('✅');
   } catch (error) {
       await m.react('❌');
