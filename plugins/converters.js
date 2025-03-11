@@ -1,5 +1,6 @@
 const {Sparky, isPublic,uploadMedia,handleMediaUpload} = require("../lib");
 const {getString, appendMp3Data} = require('./pluginsCore');
+const googleTTS = require('google-tts-api');
 const config = require('../config.js');
 const lang = getString('converters');
 
@@ -114,3 +115,37 @@ Sparky({
 		}, "image");
 		return await m.react('✅');
 	});
+
+	Sparky(
+		{
+			name: "tts",
+			fromMe: isPublic,
+			category: "converters",
+			desc: "text to speech"
+		},
+		async ({
+			m, client, args
+		}) => {
+			if (!args) {
+				m.reply('_Enter Query!_')
+			} else {
+				let [txt,
+					lang] = args.split`:`
+				const audio = googleTTS.getAudioUrl(`${txt}`, {
+					lang: lang || "ml",
+					slow: false,
+					host: "https://translate.google.com",
+				})
+				client.sendMessage(m.jid, {
+					audio: {
+						url: audio,
+					},
+					mimetype: 'audio/mpeg',
+					ptt: true,
+					fileName: `${'tts'}.mp3`,
+				}, {
+					quoted: m,
+				})
+	
+			}
+		});
