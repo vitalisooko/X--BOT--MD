@@ -3,7 +3,7 @@
   "version": "3.5.0",
   "description": "X-BOT-MD Simple WhatsApp Bot",
   "logo": "https://i.imgur.com/Q2UNwXR.jpg",
-  "repository": "https://github.com/ruemods/hmmm",
+  "repository": "https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD",
   "stack": "container",
   "env": {
     "SESSION_ID": {
