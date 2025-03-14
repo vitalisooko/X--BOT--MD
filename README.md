@@ -1,7 +1,7 @@
 # X--BOT--MD (Beta) for testers
 ## This version of x bot is only for testers to test
 
-## Join for updates
+## Join for updates 
 <p align="center">
 
   <a aria-label="Join our channel" href="https://whatsapp.com/channel/0029Va9ZOf36rsR1Ym7O2x00" target="_blank">
