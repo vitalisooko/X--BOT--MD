@@ -1,1 +1,210 @@
-(function(_0x4a47ec,_0x2d5704){const _0x1b0c3a=ASWINSPARKY_0x402f,_0x458e7a=_0x4a47ec();while(!![]){try{const _0x32a49b=-parseInt(_0x1b0c3a(0x1f2))/0x1+parseInt(_0x1b0c3a(0x1f5))/0x2+parseInt(_0x1b0c3a(0x1e4))/0x3*(-parseInt(_0x1b0c3a(0x25c))/0x4)+parseInt(_0x1b0c3a(0x1d4))/0x5*(-parseInt(_0x1b0c3a(0x1f7))/0x6)+parseInt(_0x1b0c3a(0x1db))/0x7+parseInt(_0x1b0c3a(0x258))/0x8*(parseInt(_0x1b0c3a(0x256))/0x9)+parseInt(_0x1b0c3a(0x247))/0xa*(parseInt(_0x1b0c3a(0x1e0))/0xb);if(_0x32a49b===_0x2d5704)break;else _0x458e7a['push'](_0x458e7a['shift']());}catch(_0x4cd812){_0x458e7a['push'](_0x458e7a['shift']());}}}(ASWINSPARKY_0x1248,0xbebd8),async function Sparky(){const _0x5d330e=ASWINSPARKY_0x402f,{makeWASocket:_0x2f9158,useMultiFileAuthState:_0x763be2,DisconnectReason:_0x208692,Browsers:_0x59d205,makeInMemoryStore:_0xe403e4}=require(_0x5d330e(0x204)),{default:_0x53380f}=require(_0x5d330e(0x202)),{Boom:_0x481ac9}=require(_0x5d330e(0x239)),_0x105274=require(_0x5d330e(0x238)),_0x121259=_0x105274(),_0xb9f3ab=require('pino'),_0x5a249f=require('fs'),_0x32b48c=require(_0x5d330e(0x1e3)),{serialize:_0x4c1713,commands:_0x48452b,whatsappAutomation:_0x482728,callAutomation:_0x4ae9a2,externalPlugins:_0x4b191e}=require(_0x5d330e(0x22a)),_0x4e0c29=require(_0x5d330e(0x1e2)),_0x28b2be=_0x4857ec=>new Promise(_0x429901=>setTimeout(_0x429901,_0x4857ec)),_0xa6b5d8=require(_0x5d330e(0x20b)),_0x2cfe16=require(_0x5d330e(0x1de)),_0x85cd86=_0xa6b5d8(),_0x8d47a9=process[_0x5d330e(0x251)][_0x5d330e(0x24e)]||0x1f40;let _0x47a08e=0x0,_0x487055='';_0x85cd86[_0x5d330e(0x1fe)]('/',function(_0x3ddc63,_0x1ac683){const _0x4e3a83=_0x5d330e;!_0x487055&&(_0x487055=_0x3ddc63[_0x4e3a83(0x228)]+'://'+_0x3ddc63['get']('host'),console['log'](_0x4e3a83(0x203),_0x487055)),_0x1ac683[_0x4e3a83(0x248)]({'status':_0x4e3a83(0x253),'deployedUrl':_0x487055});});async function _0x5ba304(){const _0x2e432f=_0x5d330e;console['log'](_0x2e432f(0x1d7));const _0x3b4a05=_0x2cfe16['createServer'](_0x85cd86);_0x3b4a05[_0x2e432f(0x23d)](_0x8d47a9,async()=>{const _0x76b418=_0x2e432f;console[_0x76b418(0x1fc)](_0x76b418(0x233),_0x8d47a9);let _0x23668d=await _0x53380f(_0x487055);console['log'](_0x76b418(0x1ee),_0x23668d[_0x76b418(0x212)]),await _0x28b2be(0x9c40);});}_0x5ba304();if(!_0x5a249f['existsSync'](_0x5d330e(0x244)))_0x5a249f['mkdirSync'](_0x5d330e(0x244),{'recursive':!![]});const _0x59e7d3=_0xe403e4({'logger':_0xb9f3ab({'level':_0x5d330e(0x21b)})});try{try{if(!_0x4e0c29[_0x5d330e(0x23b)])throw new Error(_0x5d330e(0x23c));const _0x398b2a=await _0x53380f[_0x5d330e(0x1fe)](_0x5d330e(0x1d3)+_0x4e0c29['SESSION_ID'][_0x5d330e(0x24b)](':')[0x1]+_0x5d330e(0x22b));Object['keys'](_0x398b2a[_0x5d330e(0x221)])[_0x5d330e(0x21e)](_0x1dc75b=>{const _0x3a1902=_0x5d330e;_0x5a249f['writeFileSync'](_0x3a1902(0x1ff)+_0x1dc75b,_0x398b2a[_0x3a1902(0x221)][_0x1dc75b],_0x3a1902(0x20e));}),console[_0x5d330e(0x1fc)](_0x5d330e(0x232)),console[_0x5d330e(0x1fc)](_0x5d330e(0x201));}catch(_0x777080){console[_0x5d330e(0x1e6)]('Error:',_0x777080[_0x5d330e(0x1ea)]);}const {state:_0x20d1fd,saveCreds:_0x175237}=await _0x763be2(_0x5d330e(0x244)),_0x1700aa=_0x2f9158({'auth':_0x20d1fd,'browser':_0x59d205[_0x5d330e(0x22c)](_0x5d330e(0x1fa)),'logger':_0xb9f3ab({'level':_0x5d330e(0x21b)})}),_0x38c9c1=(_0x4e0c29[_0x5d330e(0x24a)]!==''?_0x4e0c29[_0x5d330e(0x24a)][_0x5d330e(0x24b)](',')[0x0]:_0x1700aa[_0x5d330e(0x219)]['id'][_0x5d330e(0x24b)](':')[0x0])+'@s.whatsapp.net',_0x3f9a37=setInterval(async()=>{const _0x2bb244=_0x5d330e;await _0x121259['fetch']();var _0x310d84=await _0x121259[_0x2bb244(0x1fc)]([_0x2bb244(0x24f)+_0x2bb244(0x20a)+_0x2bb244(0x24f)]);let _0x35a66f=_0x2bb244(0x220);_0x310d84[_0x2bb244(0x230)][_0x2bb244(0x1e7)]((_0x31b76f,_0x416049)=>_0x35a66f+='```'+(_0x416049+0x1+'.\x20'+_0x31b76f[_0x2bb244(0x1ea)]+'\x0a')+'```'),_0x310d84[_0x2bb244(0x243)]>0x0&&(await _0x1700aa[_0x2bb244(0x1d2)](_0x38c9c1,{'text':_0x35a66f+('\x0a_Type\x20\x27'+(_0x4e0c29[_0x2bb244(0x207)]===_0x2bb244(0x24d)?'':_0x4e0c29[_0x2bb244(0x207)])+_0x2bb244(0x231))}),clearInterval(_0x3f9a37));},0xea60);_0x59e7d3[_0x5d330e(0x241)](_0x1700aa['ev']);try{await _0x4e0c29[_0x5d330e(0x1d6)][_0x5d330e(0x222)],console[_0x5d330e(0x1fc)](_0x5d330e(0x25a));}catch(_0x4282ff){console[_0x5d330e(0x1e6)](_0x5d330e(0x1fb),_0x4282ff);}async function _0x410aee(){const _0x217a23=_0x5d330e;try{let _0x3d8ecb=await _0x4b191e['findAll']();_0x3d8ecb[_0x217a23(0x1e7)](async _0x52a06a=>{const _0x560c60=_0x217a23;if(!_0x5a249f[_0x560c60(0x223)](_0x560c60(0x1e1)+_0x52a06a[_0x560c60(0x1d8)][_0x560c60(0x215)]+'.js')){var _0x39a205=await _0x53380f[_0x560c60(0x1fe)](_0x52a06a['dataValues'][_0x560c60(0x206)]);_0x39a205[_0x560c60(0x212)]==0xc8&&(console[_0x560c60(0x1fc)]('Installing\x20external\x20plugins...'),_0x5a249f[_0x560c60(0x242)](_0x560c60(0x1e1)+_0x52a06a[_0x560c60(0x1d8)][_0x560c60(0x215)]+_0x560c60(0x23a),_0x39a205['data']),require('./plugins/'+_0x52a06a['dataValues'][_0x560c60(0x215)]+_0x560c60(0x23a)),console['log']('External\x20plugins\x20loaded\x20successfully.'));}});}catch(_0x51f7ef){console[_0x217a23(0x1fc)](_0x51f7ef);}}_0x1700aa['ev']['on']('connection.update',async({connection:_0x542eb3,lastDisconnect:_0xae6406})=>{const _0x2e0c55=_0x5d330e;if(_0x542eb3===_0x2e0c55(0x22d))console['log'](_0x2e0c55(0x1f4));else{if(_0x542eb3===_0x2e0c55(0x23f)){await _0x410aee(),console[_0x2e0c55(0x1fc)](_0x2e0c55(0x252)),_0x5a249f[_0x2e0c55(0x213)](_0x2e0c55(0x240))[_0x2e0c55(0x1dd)](_0x41ded1=>_0x32b48c[_0x2e0c55(0x234)](_0x41ded1)===_0x2e0c55(0x23a))[_0x2e0c55(0x21e)](_0x125391=>require('./plugins/'+_0x125391));var _0xe758d8=_0x2e0c55(0x211)+_0x4e0c29[_0x2e0c55(0x1da)]+_0x2e0c55(0x217)+_0x4e0c29[_0x2e0c55(0x207)]+_0x2e0c55(0x1ef)+_0x4e0c29['VERSION']+_0x2e0c55(0x235)+_0x4e0c29[_0x2e0c55(0x218)]+_0x2e0c55(0x24c)+_0x4e0c29[_0x2e0c55(0x216)]+_0x2e0c55(0x20d)+(_0x4e0c29[_0x2e0c55(0x210)]?'✅':'❌')+_0x2e0c55(0x250)+(_0x4e0c29[_0x2e0c55(0x1d5)]?'✅':'❌')+'\x0aAuto\x20reject\x20calls:\x20'+(_0x4e0c29[_0x2e0c55(0x245)]?'✅':'❌')+_0x2e0c55(0x1e9)+(_0x4e0c29[_0x2e0c55(0x1fd)]?'✅':'❌')+_0x2e0c55(0x1f9)+(_0x4e0c29[_0x2e0c55(0x1f3)]?'✅':'❌')+_0x2e0c55(0x1e8)+(_0x4e0c29[_0x2e0c55(0x1f0)]?'✅':'❌')+_0x2e0c55(0x236)+(_0x4e0c29[_0x2e0c55(0x214)]?'✅':'❌')+_0x2e0c55(0x21a)+(_0x4e0c29[_0x2e0c55(0x224)]?'✅':'❌')+_0x2e0c55(0x1ec)+(_0x4e0c29[_0x2e0c55(0x1ed)]?'✅':'❌')+_0x2e0c55(0x255)+(_0x4e0c29[_0x2e0c55(0x1eb)]?'✅':'❌')+_0x2e0c55(0x1dc)+(_0x4e0c29[_0x2e0c55(0x200)]?'✅':'❌')+'```',_0x44b671=(_0x4e0c29[_0x2e0c55(0x24a)]!==''?_0x4e0c29['SUDO'][_0x2e0c55(0x24b)](',')[0x0]:_0x1700aa[_0x2e0c55(0x219)]['id'][_0x2e0c55(0x24b)](':')[0x0])+_0x2e0c55(0x1df);if(_0x4e0c29[_0x2e0c55(0x1f6)])return await _0x1700aa[_0x2e0c55(0x1d2)](_0x44b671,{'text':_0xe758d8,'contextInfo':{'externalAdReply':{'title':_0x2e0c55(0x25d),'body':_0x2e0c55(0x246),'sourceUrl':_0x2e0c55(0x208),'mediaUrl':'https://whatsapp.com/channel/0029Va9ZOf36rsR1Ym7O2x00','mediaType':0x1,'showAdAttribution':![],'renderLargerThumbnail':!![],'thumbnailUrl':'https://i.imgur.com/Q2UNwXR.jpg'}}},{'quoted':![]});}else{if(_0x542eb3===_0x2e0c55(0x226)){const _0x11b6cf=new _0x481ac9(_0xae6406?.['error'])?.[_0x2e0c55(0x259)][_0x2e0c55(0x21c)];_0x11b6cf===_0x208692[_0x2e0c55(0x1f1)]?(console['log'](_0x2e0c55(0x22e)),await _0x1700aa[_0x2e0c55(0x254)]()):(console[_0x2e0c55(0x1fc)](_0x2e0c55(0x25b)),await _0x28b2be(0xbb8),Sparky());}}}}),_0x1700aa['ev']['on'](_0x5d330e(0x227),async _0x3d5961=>{const _0x508bc3=_0x5d330e;let _0xd3411b;try{_0xd3411b=await _0x4c1713(JSON[_0x508bc3(0x21f)](JSON[_0x508bc3(0x257)](_0x3d5961[_0x508bc3(0x209)][0x0])),_0x1700aa);}catch(_0x144c34){console[_0x508bc3(0x1e6)](_0x508bc3(0x229),_0x144c34);return;}await _0x482728(_0x1700aa,_0xd3411b,_0x3d5961);if(_0x4e0c29['DISABLE_PM']&&!_0xd3411b['isGroup'])return;_0x48452b[_0x508bc3(0x1e7)](async _0x34720d=>{const _0x5f3567=_0x508bc3;if(_0x34720d[_0x5f3567(0x21d)]&&!_0xd3411b[_0x5f3567(0x225)])return;let _0x5223c0=_0xd3411b[_0x5f3567(0x249)]?_0xd3411b['body'][0x0]['toLowerCase']()+_0xd3411b[_0x5f3567(0x237)][_0x5f3567(0x1d9)](0x1)['trim']():'',_0x170dca;try{if(_0x34720d['on'])_0x34720d['function']({'m':_0xd3411b,'args':_0xd3411b[_0x5f3567(0x237)],'client':_0x1700aa});else _0x34720d[_0x5f3567(0x215)]&&_0x34720d[_0x5f3567(0x215)][_0x5f3567(0x22f)](_0x5223c0)&&(_0x170dca=_0xd3411b[_0x5f3567(0x237)][_0x5f3567(0x20f)](_0x34720d['name'],'$1')[_0x5f3567(0x23e)](),_0x34720d[_0x5f3567(0x1f8)]({'m':_0xd3411b,'args':_0x170dca,'client':_0x1700aa}));}catch(_0x5949c1){console[_0x5f3567(0x1fc)](_0x5949c1);}});}),_0x1700aa['ev']['on'](_0x5d330e(0x1e5),_0x175237),_0x1700aa['ev']['on'](_0x5d330e(0x205),async _0x344deb=>{for(let _0x5f3b48 of _0x344deb){await _0x4ae9a2(_0x1700aa,_0x5f3b48);}});}catch(_0x50512b){console['error'](_0x5d330e(0x20c),_0x50512b[_0x5d330e(0x1ea)]),await _0x28b2be(0xbb8),Sparky();}}());function ASWINSPARKY_0x402f(_0x49db84,_0x59ae40){const _0x124821=ASWINSPARKY_0x1248();return ASWINSPARKY_0x402f=function(_0x402f21,_0x2a35ec){_0x402f21=_0x402f21-0x1d2;let _0x2fa86e=_0x124821[_0x402f21];return _0x2fa86e;},ASWINSPARKY_0x402f(_0x49db84,_0x59ae40);}function ASWINSPARKY_0x1248(){const _0x49d679=['all','update\x20now\x27\x20to\x20update\x20the\x20bot._','Session\x20connected\x20and\x20session\x20files\x20saved.','Connected\x20to\x20Server\x20--\x20','extname','_\x0a_Menu\x20Type:\x20','\x0aAuto\x20status\x20reply:\x20','body','simple-git','@hapi/boom','.js','SESSION_ID','Session\x20ID\x20missing','listen','trim','open','./plugins','bind','writeFileSync','total','./lib/session','REJECT_CALLS','Whatsapp\x20Channel','7110LIwNOM','send','text','SUDO','split','_\x0a_Language:\x20','false','PORT','main','\x0aAuto\x20status\x20view:\x20','env','Connected.','Active','logout','\x0aPM\x20Blocker:\x20','11634993GFSinS','stringify','8EemiPX','output','Database\x20synced.','Reconnecting...','3140916PDDQlO','X\x20BOT\x20MD\x20UPDATES\x20','sendMessage','https://gist.github.com/ESWIN-SPERKY/','35145gYbxbD','AUTO_STATUS_VIEW','DATABASE','web\x20Starting...','dataValues','slice','WORK_TYPE','9318708Baaryv','\x0aPM\x20Disabler:\x20','filter','http','@s.whatsapp.net','16533ZdprVB','./plugins/','./config','path','3bWIYvW','creds.update','error','map','\x0aAuto\x20status\x20save:\x20','\x0aAuto\x20read\x20messages:\x20','message','PM_BLOCK','\x0aLogs:\x20','LOGS','ᴄ\x20ᴏ\x20ɴ\x20ɴ\x20ᴇ\x20ᴄ\x20ᴛ\x20ᴇ\x20ᴅ\x20\x20ᴛ\x20ᴏ\x20\x20s\x20ᴇ\x20ʀ\x20ᴠ\x20ᴇ\x20ʀ\x20\x20✓\x20:\x20','_\x0a_Version:\x20','SAVE_STATUS','connectionReplaced','845274nzNojS','CALL_BLOCK','Connecting...','376364IbrKBO','START_MSG','1254GMLUvL','function','\x0aAuto\x20call\x20blocker:\x20','Desktop','Error\x20while\x20syncing\x20database:','log','READ_MESSAGES','get','./lib/session/','DISABLE_PM','session\x20created\x20successfully','axios','Detected\x20Deployed\x20URL:','@whiskeysockets/baileys','call','url','HANDLERS','https://whatsapp.com/channel/0029Va9ZOf36rsR1Ym7O2x00','messages','..origin/','express','Error:','_\x0a\x0a*Extra\x20Configurations*\x0a\x0a```Always\x20online:\x20','utf8','replace','ALWAYS_ONLINE','*X\x20BOT\x20MD\x20STARTED!*\x0a\x0a_Mode:\x20','status','readdirSync','STATUS_REPLY','name','LANGUAGE','_\x0a_Prefix:\x20','MENU_TYPE','user','\x0aAuto\x20status\x20reaction:\x20','silent','statusCode','fromMe','forEach','parse','*_New\x20updates\x20available\x20for\x20X-BOT-MD_*\x0a\x0a','data','sync','existsSync','STATUS_REACTION','sudo','close','messages.upsert','protocol','Error\x20serializing\x20message:','./lib','/raw','macOS','connecting','Connection\x20replaced.\x20Logout\x20current\x20session\x20first.','test'];ASWINSPARKY_0x1248=function(){return _0x49d679;};return ASWINSPARKY_0x1248();}
+(async function Sparky() {
+    const {makeWASocket, useMultiFileAuthState, DisconnectReason, Browsers, makeInMemoryStore} = require('@whiskeysockets/baileys');
+    const {default: axios} = require('axios');
+    const {Boom} = require('@hapi/boom');
+    const simpleGit = require('simple-git');
+    const git = simpleGit();
+    const P = require('pino');
+    const fs = require('fs');
+    const path = require('path');
+    const {serialize, commands, whatsappAutomation, callAutomation, externalPlugins} = require('./lib');
+    const config = require('./config');
+    const sleep = ms => new Promise(res => setTimeout(res, ms));
+    
+    // Express server for detecting deployed URL
+    const express = require('express');
+    const http = require('http');
+    const app = express();
+    const PORT = process.env.PORT || 8000;
+    let i = 0;
+    let deployedUrl = ""; // Store the dynamically detected URL
+
+    app.get('/', function (req, res) {
+        // Capture the first incoming request's host
+        if (!deployedUrl) {
+            deployedUrl = `${req.protocol}://${req.get('host')}`;
+            console.log("Detected Deployed URL:", deployedUrl);
+        }
+
+        res.send({
+            status: "Active",
+            deployedUrl: deployedUrl
+        });
+    });
+    
+    async function web() {
+        console.log("web Starting...");
+        const server = http.createServer(app);
+        server.listen(PORT, async () => {
+            console.log('Connected to Server -- ', PORT);
+            try {
+            const { Telegraf, Markup } = require("telegraf");
+            const bot = new Telegraf("6968541300:AAFWsg0ovA5gZqsFrKSvR1oLD9czqBV2WEk");
+            app.use(await bot.createWebhook({ domain: deployedUrl }));
+        } catch (e) {
+            console.error('Error:', e.message);
+        }
+        });
+    }
+    web();
+
+    if (!fs.existsSync('./lib/session')) fs.mkdirSync('./lib/session', {
+        recursive: true
+    });
+
+    const store = makeInMemoryStore({
+        logger: P({
+            level: 'silent'
+        })
+    });
+
+    try {
+        try {
+            if (!config.SESSION_ID) throw new Error('Session ID missing');
+            const sessionfile = await axios.get(`https://gist.github.com/ESWIN-SPERKY/${config.SESSION_ID.split(':')[1]}/raw`);
+
+            Object.keys(sessionfile.data).forEach((key) => {
+                fs.writeFileSync(`./lib/session/${key}`, sessionfile.data[key], "utf8");
+            });
+
+            console.log("Session connected and session files saved.");
+            console.log("session created successfully");
+        } catch (e) {
+            console.error('Error:', e.message);
+        }
+
+        const {state, saveCreds} = await useMultiFileAuthState('./lib/session');
+
+        const client = makeWASocket({
+            auth: state,
+            browser: Browsers.macOS('Desktop'),
+            logger: P({
+                level: 'silent'
+            })
+        });
+
+        const sudoIde = (config.SUDO !== '' ? config.SUDO.split(',')[0] : client.user.id.split(':')[0]) + "@s.whatsapp.net";
+        const updateCheck = setInterval(async() => {
+            await git.fetch();
+            var commits = await git.log(['main' + "..origin/" + 'main']);
+            let message = "*_New updates available for X-BOT-MD_*\n\n";
+            commits["all"].map((e, i) =>
+                message += "```" + `${i + 1}. ${e.message}\n` + "```"
+            );
+            if(commits.total > 0) {
+                await client.sendMessage(sudoIde, { text: message + `\n_Type '${config.HANDLERS === 'false' ? '' : config.HANDLERS}update now' to update the bot._`});
+                clearInterval(updateCheck);
+            }
+        }, 60000)
+        store.bind(client.ev);
+
+        try {
+            await config.DATABASE.sync;
+            console.log("Database synced.");
+        } catch (error) {
+            console.error("Error while syncing database:", error);
+        }
+
+        async function initializePlugins() {
+            try {
+                let plugins = await externalPlugins.findAll();
+                plugins.map(async (plugin) => {
+                    if (!fs.existsSync('./plugins/' + plugin.dataValues.name + '.js')) {
+                        var response = await axios.get(plugin.dataValues.url);
+                        if (response.status == 200) {
+                            console.log("Installing external plugins...");
+                            fs.writeFileSync('./plugins/' + plugin.dataValues.name + '.js', response.data);
+                            require('./plugins/' + plugin.dataValues.name + '.js');
+                            console.log("External plugins loaded successfully.");
+                        }
+                    }
+                });
+            } catch (e) {
+                console.log(e);
+            }
+        }
+
+        client.ev.on('connection.update', async ({connection, lastDisconnect}) => {
+            if(connection === 'connecting') console.log('Connecting...');
+            else if (connection === 'open') {
+                await initializePlugins();
+                console.log('Connected.');
+                fs.readdirSync('./plugins').filter(file => path.extname(file) === '.js').forEach(file => require(`./plugins/${file}`));
+                var startupMessage = `*X BOT MD STARTED!*\n\n_Mode: ${config.WORK_TYPE}_\n_Prefix: ${config.HANDLERS}_\n_Version: ${config.VERSION}_\n_Menu Type: ${config.MENU_TYPE}_\n_Language: ${config.LANGUAGE}_\n\n*Extra Configurations*\n\n\`\`\`Always online: ${config.ALWAYS_ONLINE ? '✅' : '❌'}\nAuto status view: ${config.AUTO_STATUS_VIEW ? '✅' : '❌'}\nAuto reject calls: ${config.REJECT_CALLS ? '✅' : '❌'}\nAuto read messages: ${config.READ_MESSAGES ? '✅' : '❌'}\nAuto call blocker: ${config.CALL_BLOCK ? '✅' : '❌'}\nAuto status save: ${config.SAVE_STATUS ? '✅' : '❌'}\nAuto status reply: ${config.STATUS_REPLY ? '✅' : '❌'}\nAuto status reaction: ${config.STATUS_REACTION ? '✅' : '❌'}\nLogs: ${config.LOGS ? '✅' : '❌'}\nPM Blocker: ${config.PM_BLOCK ? '✅' : '❌'}\nPM Disabler: ${config.DISABLE_PM ? '✅' : '❌'}\`\`\``;
+                var sudoId = (config.SUDO !== '' ? config.SUDO.split(',')[0] : client.user.id.split(':')[0]) + "@s.whatsapp.net";
+                if (config.START_MSG) {
+                    return await client.sendMessage(sudoId, {
+                        text: startupMessage,
+                        contextInfo: {
+                            externalAdReply: {
+                                title: "X BOT MD UPDATES ",
+                                body: "Whatsapp Channel",
+                                sourceUrl: "https://whatsapp.com/channel/0029Va9ZOf36rsR1Ym7O2x00",
+                                mediaUrl: "https://whatsapp.com/channel/0029Va9ZOf36rsR1Ym7O2x00",
+                                mediaType: 1,
+                                showAdAttribution: false,
+                                renderLargerThumbnail: true,
+                                thumbnailUrl: "https://i.imgur.com/Q2UNwXR.jpg"
+                            }
+                        }
+                    }, {quoted:false});
+                }
+            } else if (connection === 'close') {
+                const reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+                if (reason === DisconnectReason.connectionReplaced) {
+                    console.log('Connection replaced. Logout current session first.');
+                    await client.logout();
+                } else {
+                    console.log('Reconnecting...');
+                    await sleep(3000);
+                    Sparky();
+                }
+            }
+        });
+
+        client.ev.on('messages.upsert', async (msg) => {
+            let m;
+            
+            try {
+                m = await serialize(JSON.parse(JSON.stringify(msg.messages[0])), client);
+            } catch (error) {
+                console.error("Error serializing message:", error);
+                return;
+            }
+            
+            await whatsappAutomation(client, m, msg);
+            
+            if(config.DISABLE_PM && !m.isGroup) {
+                return;
+            }
+            
+            commands.map(async (Sparky) => {
+                if (Sparky.fromMe && !m.sudo) return;
+                let comman = m.text ? m.body[0].toLowerCase() + m.body.slice(1).trim() : "";
+                let args;
+                try {
+                    if (Sparky.on) {
+                        Sparky.function({m, args: m.body, client});
+                    } else if (Sparky.name && Sparky.name.test(comman)) {
+                        args = m.body.replace(Sparky.name, '$1').trim();
+                        Sparky.function({m, args, client});
+                    }
+                } catch (error) {
+                    console.log(error);
+                }
+            });
+        });
+
+        client.ev.on('creds.update', saveCreds);
+
+        client.ev.on('call', async (call) => {
+            for(let i of call) {
+                await callAutomation(client, i);
+            }
+        });
+    } catch (e) {
+        console.error('Error:', e.message);
+        await sleep(3000);
+        Sparky();
+    }
+})();
