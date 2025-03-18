@@ -9,7 +9,7 @@ const {
 const plugins = require("../lib");
 const config = require("../config.js");
 const font = require("@viper-x/fancytext");
-const menust = config.MENU_TYPE;
+const menust = config.MENU_FONT;
 const style = font[menust];
 const more = String.fromCharCode(8206);
 const readMore = more.repeat(4001);
@@ -29,10 +29,10 @@ Sparky({
         if (args) {
             for (let i of plugins.commands) {
                 if (i.name.test(args)) {
-                    return m.reply(font.tiny(`*command : ${args.trim()}*\n*description : ${i.desc.toLowerCase()}*`));
+                    return m.reply(style(`*command : ${args.trim()}*\n*description : ${i.desc.toLowerCase()}*`));
                 }
             }
-            return m.reply(font.tiny("_oops command not found_"))
+            return m.reply(style("_oops command not found_"))
         } else {
             let [date,
                 time
@@ -107,11 +107,11 @@ Sparky({
          switch (config.MENU_TYPE.toLowerCase()) {
          case 'big': {
          return await client.sendMessage(m.jid, {
-                    text: font.tiny(menu),
+                    text: style(menu),
                     contextInfo: {
                         externalAdReply: {
-                            title: font.tiny(`Hey ${m.pushName}!`),
-                            body: font.tiny(`${config.BOT_INFO.split(";")[0]}`),
+                            title: style(`Hey ${m.pushName}!`),
+                            body: style(`${config.BOT_INFO.split(";")[0]}`),
                             sourceUrl: "https://sparky.devstackx.in",
                             mediaType: 1,
                             showAdAttribution: true,
@@ -123,16 +123,16 @@ Sparky({
          break;
          }
          case 'image': {
-         return await client.sendMessage(m.jid, { image: await getBuffer(config.BOT_INFO.split(";")[2]), caption: font.tiny(menu) }, { quoted: m });
+         return await client.sendMessage(m.jid, { image: await getBuffer(config.BOT_INFO.split(";")[2]), caption: style(menu) }, { quoted: m });
          break;
          }
          case 'small': {
          return await client.sendMessage(m.jid, {
-                    text: font.tiny(menu),
+                    text: style(menu),
                     contextInfo: {
                         externalAdReply: {
-                            title: font.tiny(`Hey ${m.pushName}!`),
-                            body: font.tiny(`${config.BOT_INFO.split(";")[0]}`),
+                            title: style(`Hey ${m.pushName}!`),
+                            body: style(`${config.BOT_INFO.split(";")[0]}`),
                             sourceUrl: "https://sparky.devstackx.in",
                             mediaUrl: "https://sparky.devstackx.in",
                             mediaType: 1,
@@ -151,12 +151,12 @@ Sparky({
                     },
                     caption: menu,
                     mimetype: 'application/zip',
-                    fileName: font.tiny(config.BOT_INFO.split(";")[0]),
+                    fileName: style(config.BOT_INFO.split(";")[0]),
                     fileLength: "99999999999",
                     contextInfo: {
                         externalAdReply: {
-                            title: font.tiny(`Hey ${m.pushName}!`),
-                            body: font.tiny(`${config.BOT_INFO.split(";")[0]}`),
+                            title: style(`Hey ${m.pushName}!`),
+                            body: style(`${config.BOT_INFO.split(";")[0]}`),
                             sourceUrl: "https://sparky.devstackx.in",
                             mediaType: 1,
                             showAdAttribution: true,
@@ -171,7 +171,7 @@ Sparky({
          }
          case 'text': {
         return await client.sendMessage(m.jid, {
-                    text: font.tiny(menu)
+                    text: style(menu)
                 }, {
                     quoted: sperky
                 });
@@ -188,7 +188,7 @@ Sparky({
                             scheduledCallCreationMessage: {
                                 scheduledTimestampMs: Date.now(),
                                 callType: 1,
-                                title: font.tiny(menu)
+                                title: style(menu)
                             }
                         }
                     }
@@ -205,7 +205,7 @@ Sparky({
                         requestFrom: m.sender.jid,
                         noteMessage: {
                             extendedTextMessage: {
-                                text: font.tiny(menu)
+                                text: style(menu)
                             }
                         },
                         expiryTimestamp: '0',
