@@ -107,11 +107,11 @@ Sparky({
          switch (config.MENU_TYPE.toLowerCase()) {
          case 'big': {
          return await client.sendMessage(m.jid, {
-                    text: style(menu),
+                    text: font.tiny(menu),
                     contextInfo: {
                         externalAdReply: {
-                            title: style(`Hey ${m.pushName}!`),
-                            body: style(`${config.BOT_INFO.split(";")[0]}`),
+                            title: font.tiny(`Hey ${m.pushName}!`),
+                            body: font.tiny(`${config.BOT_INFO.split(";")[0]}`),
                             sourceUrl: "https://sparky.devstackx.in",
                             mediaType: 1,
                             showAdAttribution: true,
@@ -123,16 +123,16 @@ Sparky({
          break;
          }
          case 'image': {
-         return await client.sendMessage(m.jid, { image: await getBuffer(config.BOT_INFO.split(";")[2]), caption: style(menu) }, { quoted: m });
+         return await client.sendMessage(m.jid, { image: await getBuffer(config.BOT_INFO.split(";")[2]), caption: font.tiny(menu) }, { quoted: m });
          break;
          }
          case 'small': {
          return await client.sendMessage(m.jid, {
-                    text: style(menu),
+                    text: font.tiny(menu),
                     contextInfo: {
                         externalAdReply: {
-                            title: style(`Hey ${m.pushName}!`),
-                            body: style(`${config.BOT_INFO.split(";")[0]}`),
+                            title: font.tiny(`Hey ${m.pushName}!`),
+                            body: font.tiny(`${config.BOT_INFO.split(";")[0]}`),
                             sourceUrl: "https://sparky.devstackx.in",
                             mediaUrl: "https://sparky.devstackx.in",
                             mediaType: 1,
@@ -151,12 +151,12 @@ Sparky({
                     },
                     caption: menu,
                     mimetype: 'application/zip',
-                    fileName: style(config.BOT_INFO.split(";")[0]),
+                    fileName: font.tiny(config.BOT_INFO.split(";")[0]),
                     fileLength: "99999999999",
                     contextInfo: {
                         externalAdReply: {
-                            title: style(`Hey ${m.pushName}!`),
-                            body: style(`${config.BOT_INFO.split(";")[0]}`),
+                            title: font.tiny(`Hey ${m.pushName}!`),
+                            body: font.tiny(`${config.BOT_INFO.split(";")[0]}`),
                             sourceUrl: "https://sparky.devstackx.in",
                             mediaType: 1,
                             showAdAttribution: true,
@@ -171,7 +171,7 @@ Sparky({
          }
          case 'text': {
         return await client.sendMessage(m.jid, {
-                    text: style(menu)
+                    text: font.tiny(menu)
                 }, {
                     quoted: sperky
                 });
@@ -188,7 +188,7 @@ Sparky({
                             scheduledCallCreationMessage: {
                                 scheduledTimestampMs: Date.now(),
                                 callType: 1,
-                                title: style(menu)
+                                title: font.tiny(menu)
                             }
                         }
                     }
@@ -205,7 +205,7 @@ Sparky({
                         requestFrom: m.sender.jid,
                         noteMessage: {
                             extendedTextMessage: {
-                                text: style(menu)
+                                text: font.tiny(menu)
                             }
                         },
                         expiryTimestamp: '0',
