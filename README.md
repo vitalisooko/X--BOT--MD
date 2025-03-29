@@ -31,6 +31,16 @@
     <img alt='SCAN QR' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/>
 </a>
 
+#### DEPLOY TO HEROKU 
+
+1. If You don't have a account in Heroku. Create a account in heroku.
+    <br>
+<a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+
+2. Now Deploy
+    <br>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+
 #### DEPLOY TO KOYEB 
 
 1. If You don't have a account in koyeb. Create a account.
@@ -42,6 +52,21 @@
 4. Now Deploy
     <br>
 <a href='https://app.koyeb.com/services/deploy?type=git&repository=github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD&branch=main&name=xbotmd&builder=dockerfile&env[SESSION_ID]=&env[WORK_TYPE]=public&env[HANDLERS]=.&env[BOT_INFO]=X-BOT-MD;ASWIN%20SPARKY;https://i.imgur.com/QH7T7u9.jpeg&env[SUDO]=917012984396&env[STICKER_DATA]=SPARKY&env[DATABASE_URL]&env[KOYEB_SERVICE_NAME]=xbotmd&env[KOYEB_API_KEY]' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
+
+#### DEPLOY TO RENDER 
+
+1. If You don't have a account in render. Create a account.
+    <br>
+<a href='https://dashboard.render.com/register' target="_blank"><img alt='render' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+
+2. Get [DATABASE_URL](https://dashboard.render.com) and copy it
+
+3. Get [Render api key](https://dashboard.render.com/u/settings#api-keys)
+
+
+4. Now Deploy
+    <br>
+<a href='https://dashboard.render.com/web/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/></a>
 
 
 #### Thanks To
