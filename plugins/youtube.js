@@ -67,7 +67,7 @@ async ({
       await m.react('⬇️');
       const url = await yta(args);
       const songbuff = await (await fetch(url)).buffer();
-      const tomp3 = await convertToMp3(songbuff, 'mp4')
+      const tomp3 = await convertToMp3(songbuff, 'mp3')
       await client.sendMessage(m.jid , {audio : tomp3,  mimetype : 'audio/mpeg'} , { quoted : m })
       await m.react('✅');
   } catch (error) {
@@ -94,7 +94,7 @@ await m.react('⬇️');
       await m.reply(`Downloading ${play.title}`)
 const url = await yta(play.url);
 const songbuff = await (await fetch(url)).buffer();
-const tomp3 = await convertToMp3(songbuff, 'mp4')
+const tomp3 = await convertToMp3(songbuff, 'mp3')
 await client.sendMessage(m.jid , {audio : tomp3,  mimetype : 'audio/mpeg'} , { quoted : m })
  await m.react('✅');     
   } catch (error) {
@@ -121,7 +121,7 @@ await m.react('⬇️');
       await m.reply(`Downloading ${play.title}`)
 const url = await yta(play.url);
 const songbuff = await (await fetch(url)).buffer();
-const tomp3 = await convertToMp3(songbuff, 'mp4')
+const tomp3 = await convertToMp3(songbuff, 'mp3')
 await client.sendMessage(m.jid , {audio : tomp3,  mimetype : 'audio/mpeg'} , { quoted : m })
  await m.react('✅');     
   } catch (error) {
