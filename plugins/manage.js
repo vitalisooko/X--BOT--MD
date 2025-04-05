@@ -1,5 +1,6 @@
 const {
     Sparky,
+    isPublic,
     setData,
     getData
 } = require('../lib');
@@ -28,3 +29,37 @@ const lang = getString('group');
 //     }
 // }
 // )
+
+Sparky({
+    name: "pair",
+    fromMe: isPublic,
+    category: "misc",
+    desc: ""
+},
+async ({
+    m, client, args
+}) => {
+    try {
+        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+        if (!args) {
+            return await m.reply("_Example : .pair 917012984396_");
+        }
+        const pair = await getJson(`https://x-bot-md-qr.koyeb.app/code?number=${args}`);
+        if (!pair || !pair.code) {
+            return await m.reply("Failed to retrieve pairing code. Please check the phone number and try again.");
+        }
+        const pairingCode = pair.code;
+        await m.reply(`*PAIR CODE : ${pairingCode}*\n\n How to Link: 
+1. Open WhatsApp on your phone.
+2. Go to Settings > Linked Devices.
+3. Tap Link a Device then Link with Phone.
+4. Enter the pair code above.
+5. Alternatively, tap the WhatsApp notification sent to your phone.
+\n⏳ *Code expires in 2 minutes!*`);
+        await sleep(2000);
+        await m.reply(`${pairingCode}`);
+    } catch (error) {
+        console.error(error);
+        await m.reply("An error occurred. Please try again later.");
+    }
+});
