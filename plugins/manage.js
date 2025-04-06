@@ -61,3 +61,54 @@ async ({
         await m.reply("An error occurred. Please try again later.");
     }
 });
+
+
+Sparky({
+    name: "repo",
+    fromMe: true,
+    category: "misc",
+    desc: ""
+},
+async ({
+    m, client, args
+}) => {
+const data = await getJson('https://api.github.com/repos/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD');
+        const repoInfo = `
+    _*💻 BOT REPOSITORY*_
+        
+🔸 *Name:* ${data.name}
+🔸 *Stars:* ${data.stargazers_count}
+🔸 *Forks:* ${data.forks_count}
+🔸 *GitHub Link:* 
+https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD
+
+Hey ${m.pushName}!, Don't forget to star and fork my repository!`;
+
+return m.reply(repoInfo)
+
+});
+
+Sparky({
+    name: "sc",
+    fromMe: true,
+    category: "misc",
+    desc: ""
+},
+async ({
+    m, client, args
+}) => {
+const data = await getJson('https://api.github.com/repos/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD');
+        const repoInfo = `
+    _*💻 BOT REPOSITORY*_
+        
+🔸 *Name:* ${data.name}
+🔸 *Stars:* ${data.stargazers_count}
+🔸 *Forks:* ${data.forks_count}
+🔸 *GitHub Link:* 
+https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD
+
+Hey ${m.pushName}!, Don't forget to star and fork my repository!`;
+
+return m.reply(repoInfo)
+
+});
