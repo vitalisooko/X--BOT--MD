@@ -32,7 +32,7 @@ const lang = getString('group');
 
 Sparky({
     name: "pair",
-    fromMe: isPublic,
+    fromMe: true,
     category: "misc",
     desc: ""
 },
