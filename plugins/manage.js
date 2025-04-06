@@ -4,7 +4,7 @@ const {
     setData,
     getData
 } = require('../lib');
-const {getString} = require('./pluginsCore');
+const {getString, getJson} = require('./pluginsCore');
 const lang = getString('group');
 
 // Sparky({
