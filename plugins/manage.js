@@ -40,7 +40,6 @@ async ({
     m, client, args
 }) => {
     try {
-        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
         if (!args) {
             return await m.reply("_Example : .pair 917012984396_");
         }
@@ -56,10 +55,9 @@ async ({
 4. Enter the pair code above.
 5. Alternatively, tap the WhatsApp notification sent to your phone.
 \n⏳ *Code expires in 2 minutes!*`);
-        await sleep(2000);
         await m.reply(`${pairingCode}`);
     } catch (error) {
         console.error(error);
-        await m.reply(error);
+        await m.reply("An error occurred. Please try again later.");
     }
 });
