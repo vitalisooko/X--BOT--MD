@@ -60,6 +60,6 @@ async ({
         await m.reply(`${pairingCode}`);
     } catch (error) {
         console.error(error);
-        await m.reply("An error occurred. Please try again later.");
+        await m.reply(error);
     }
 });
