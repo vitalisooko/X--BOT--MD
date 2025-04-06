@@ -17,7 +17,7 @@ const readMore = more.repeat(4001);
 
 Sparky({
     name: "menu",
-    category: "general",
+    category: "misc",
     fromMe: isPublic,
     desc: "List all available commands"
 }, async ({
