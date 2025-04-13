@@ -90,6 +90,8 @@ Sparky({
 			return await m.reply(lang.MP3_ALERT);
 		}
 		await m.react('⏫');
+		await m.sendMsg(m.jid, await m.quoted.download(), { mimetype: "audio/mpeg", quoted: m }, 'audio')
+		/*
 		await m.sendMsg(m.jid, await appendMp3Data(await m.quoted.download(), args.split(";")[2] || config.AUDIO_DATA.split(";")[2], {
                         title: args.split(";")[0] || config.AUDIO_DATA.split(";")[0],
                         artist: args.split(";")[1] || config.AUDIO_DATA.split(";")[1]
@@ -97,6 +99,7 @@ Sparky({
                         mimetype: 'audio/mpeg',
 			quoted: m
 		}, "audio");
+  */
 		return await m.react('✅');
 	});
 
