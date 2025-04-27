@@ -42,7 +42,7 @@ DATABASE.authenticate().then(() => console.log("Database connection established 
 module.exports = {
 	VERSION: require("./package.json").version,
 	ALIVE: process.env.ALIVE || "Hello i'm alive",
-	ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE || "false"),
+	ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE || "true"),
 	BGMBOT : toBool(process.env.BGMBOT || "true"),
 	API: "https://api-aswin-sparky.koyeb.app",
 	AUDIO_DATA: process.env.AUDIO_DATA || "X BOT MD;ASWIN SPARKY;https://i.ibb.co/88TXFkJ/645cfc6eb7e1.jpg",
@@ -69,7 +69,7 @@ module.exports = {
 	READ_MESSAGES: toBool(process.env.READ_MESSAGES || "false"),
 	REJECT_CALL: toBool(process.env.REJECT_CALL || "false"),
 	REJECT_CALL_MSG: process.env.REJECT_CALL_MSG || "_Calls are not allowed. Please don’t call again!._",
-	SESSION_ID: process.env.SESSION_ID || "",
+	SESSION_ID: process.env.SESSION_ID || "A-S-W-I-N-S-P-A-R-K-Y:0fc9c8c487a398cb1c3a4f56b65af183",
 	START_MSG: toBool(process.env.START_MSG || "true"),
 	STICKER_DATA: process.env.STICKER_DATA || `X BOT MD;ASWIN SPARKY`,
 	SUDO: process.env.SUDO || "917012984396",
